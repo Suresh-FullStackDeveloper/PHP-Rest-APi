@@ -1,0 +1,13 @@
+Id,name,sku,pvp,discount
+123,Suit,S16123sdasds,2000,25
+111,test1,t133232sdfd,3000,45
+222,test2,t23434323sd,4000,55
+
+
+
+db.exe export -y --map c:\test\MySampleMap.xml --out c:\test\customers.json --connstr "Driver={ZappySys CSV Driver};DataPath=https://zappysys.com/downloads/files/test/convert csv to json or xml.csv"
+
+db.exe export -y --map c:\test\MySampleMap.xml --out c:\test\customers.json --connstr "Driver={ZappySys CSV Driver};DataPath=c:\test\customers.csv"
+db.exe export "select * from _root_" --csv -y --out c:\test\data.csv --connstr "Dsn=MyOdbcDsn"
+&"c:\Program Files (x86)\ZappySys\ZappyShell\db.exe" export -y --map c:\test\MySampleMap.xml --out c:\test\customers.json --connstr "Driver={ZappySys CSV Driver};DataPath=https://zappysys.com/downloads/files/test/customers.csv;"
+c:\tools>db.exe export customers --out c:\data\cust.xlsx --gzip --connstr "Data Source=localhost;Initial Catalog=Northwind;Integrated Security=SSPI;"
